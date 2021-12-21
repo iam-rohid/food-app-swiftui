@@ -11,6 +11,14 @@
 		F86FD340277287B000B35A5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD33F277287B000B35A5B /* ContentView.swift */; };
 		F86FD342277287B200B35A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86FD341277287B200B35A5B /* Assets.xcassets */; };
 		F86FD345277287B200B35A5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86FD344277287B200B35A5B /* Preview Assets.xcassets */; };
+		F86FD34F27728A2D00B35A5B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD34E27728A2D00B35A5B /* Category.swift */; };
+		F86FD35127728B8B00B35A5B /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD35027728B8B00B35A5B /* CategoryListView.swift */; };
+		F86FD35327728BA300B35A5B /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD35227728BA300B35A5B /* CategoryListViewModel.swift */; };
+		F86FD356277291D100B35A5B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F86FD355277291D100B35A5B /* Kingfisher */; };
+		F86FD3582772942600B35A5B /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD3572772942600B35A5B /* CategoryItemView.swift */; };
+		F86FD35A2772949900B35A5B /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD3592772949800B35A5B /* MealListView.swift */; };
+		F86FD35C2772953F00B35A5B /* MealListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD35B2772953F00B35A5B /* MealListViewModel.swift */; };
+		F86FD35E2772954A00B35A5B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FD35D2772954A00B35A5B /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		F86FD33F277287B000B35A5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F86FD341277287B200B35A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F86FD344277287B200B35A5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F86FD34E27728A2D00B35A5B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F86FD35027728B8B00B35A5B /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		F86FD35227728BA300B35A5B /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		F86FD3572772942600B35A5B /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		F86FD3592772949800B35A5B /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		F86FD35B2772953F00B35A5B /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
+		F86FD35D2772954A00B35A5B /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86FD356277291D100B35A5B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +67,9 @@
 		F86FD33C277287B000B35A5B /* Food App */ = {
 			isa = PBXGroup;
 			children = (
+				F86FD34B277288A600B35A5B /* Models */,
+				F86FD34C277288B600B35A5B /* Views */,
+				F86FD34D277288BC00B35A5B /* ViewModels */,
 				F86FD33D277287B000B35A5B /* Food_AppApp.swift */,
 				F86FD33F277287B000B35A5B /* ContentView.swift */,
 				F86FD341277287B200B35A5B /* Assets.xcassets */,
@@ -65,6 +84,34 @@
 				F86FD344277287B200B35A5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F86FD34B277288A600B35A5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F86FD34E27728A2D00B35A5B /* Category.swift */,
+				F86FD35D2772954A00B35A5B /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F86FD34C277288B600B35A5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F86FD35027728B8B00B35A5B /* CategoryListView.swift */,
+				F86FD3572772942600B35A5B /* CategoryItemView.swift */,
+				F86FD3592772949800B35A5B /* MealListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F86FD34D277288BC00B35A5B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F86FD35227728BA300B35A5B /* CategoryListViewModel.swift */,
+				F86FD35B2772953F00B35A5B /* MealListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,9 @@
 			dependencies = (
 			);
 			name = "Food App";
+			packageProductDependencies = (
+				F86FD355277291D100B35A5B /* Kingfisher */,
+			);
 			productName = "Food App";
 			productReference = F86FD33A277287B000B35A5B /* Food App.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,9 @@
 				Base,
 			);
 			mainGroup = F86FD331277287B000B35A5B;
+			packageReferences = (
+				F86FD354277291D000B35A5B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F86FD33B277287B000B35A5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86FD35E2772954A00B35A5B /* Meal.swift in Sources */,
 				F86FD340277287B000B35A5B /* ContentView.swift in Sources */,
+				F86FD35327728BA300B35A5B /* CategoryListViewModel.swift in Sources */,
 				F86FD33E277287B000B35A5B /* Food_AppApp.swift in Sources */,
+				F86FD35A2772949900B35A5B /* MealListView.swift in Sources */,
+				F86FD3582772942600B35A5B /* CategoryItemView.swift in Sources */,
+				F86FD35C2772953F00B35A5B /* MealListViewModel.swift in Sources */,
+				F86FD35127728B8B00B35A5B /* CategoryListView.swift in Sources */,
+				F86FD34F27728A2D00B35A5B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F86FD354277291D000B35A5B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F86FD355277291D100B35A5B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F86FD354277291D000B35A5B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F86FD332277287B000B35A5B /* Project object */;
 }
